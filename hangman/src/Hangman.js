@@ -39,12 +39,13 @@ class Hangman extends Component {
         return this.state.anwser.split("").map((letter) => (this.state.guessed.has(letter) ? letter: "_"));
     }
 
-    handleGuess(event){
-        let letter = event.target.value;
+    //evt = event
+    handleGuess(evt){
+        let letter = evt.target.value;
         //st = state
         this.setState((st) => ({
-            guessed : this.st.guessed.add(letter),
-            numOfWrongGuess: this.st.numOfWrongGuess + (st.anwser.includes(letter) ? 0 : 1),
+            guessed : st.guessed.add(letter),
+            numOfWrongGuess: st.numOfWrongGuess + (st.anwser.includes(letter) ? 0 : 1),
         }));
     }
 
