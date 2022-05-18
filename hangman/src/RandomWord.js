@@ -19,7 +19,20 @@ let Random_Word = [
     "buffalo",
     "zebra",
     "mexico",
-    "computer"
+    "computer",
+    "headphones",
+    "water",
+    "colorado",
+    "appa",
+    "yellow",
+    "fish",
+    "pencil",
+    "music",
+    "queen",
+    "excellent",
+    "rabbit",
+    "snake",
+    "penquin",
 ];
 
 function randomWord() {
