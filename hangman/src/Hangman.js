@@ -22,7 +22,7 @@ class Hangman extends Component {
             anwser: randomWord()
         };
         this.handleGuess = this.handleGuess.bind(this);
-        this.reset = this.reset.bind(this);
+        this.reset = this.reset.bind(this); 
     }
 
     reset(){
