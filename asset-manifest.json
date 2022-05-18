@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/enmeraz-hangman/static/css/main.15a3c7cc.css",
+    "main.js": "/enmeraz-hangman/static/js/main.c48a110b.js",
+    "static/js/787.20ace30e.chunk.js": "/enmeraz-hangman/static/js/787.20ace30e.chunk.js",
+    "index.html": "/enmeraz-hangman/index.html",
+    "main.15a3c7cc.css.map": "/enmeraz-hangman/static/css/main.15a3c7cc.css.map",
+    "main.c48a110b.js.map": "/enmeraz-hangman/static/js/main.c48a110b.js.map",
+    "787.20ace30e.chunk.js.map": "/enmeraz-hangman/static/js/787.20ace30e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15a3c7cc.css",
+    "static/js/main.c48a110b.js"
+  ]
+}
