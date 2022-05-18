@@ -1,5 +1,5 @@
 .Hangman {
-    width: 400px;
+    width: 500px;
     color: black;
     text-align: center;
     zoom: 1.3;
@@ -13,21 +13,27 @@
 }
 
 .Hangman h2 {
-    font-size: 1.5rem;
+    font-size: 1.20rem;
     font-weight: 400;
 }
 
 .Hangman-word {
     letter-spacing: 1em;
     margin: 0.4em -1em 0.2em 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: rgb(56, 123, 2);
+    font-weight: bolder;
 }
 
+/* winning message */
 .Hangman-buttons {
     text-align: center;
     display: inline-block;
-    width: 250px;
+    width: 350px;
     margin-top: 0;
+    font-size: 1.75;
+    font-weight: bold;
+    color: red;
 }
 
 .Hangman button{
@@ -40,12 +46,11 @@
     outline: none;
     background: rgb(5, 154, 204);
     color: yellow;
-    box-shadow: 0 4px green;
-    padding-top: 4px;
+    border-radius: 5px;
 }
 
 .Hangman button:hover {
-    background-color: blue;
+    background-color: rgb(90, 90, 255);
 }
 
 .Hangman button:disabled{
@@ -60,7 +65,8 @@
     margin-left: auto;
     margin-right: auto;
     background: orange;
-    box-shadow: darkorange;
+    border-radius: 3px;
+    border-color: darkorange;
 }
 
 #reset:hover{
