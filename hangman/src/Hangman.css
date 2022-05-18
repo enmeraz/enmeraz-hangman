@@ -38,9 +38,9 @@
     margin: 5px 2px 2px 2px;
     letter-spacing: 1px;
     outline: none;
-    background: lightblue;
+    background: rgb(5, 154, 204);
     color: yellow;
-    box-shadow: 0 6px grey;
+    box-shadow: 0 4px green;
     padding-top: 4px;
 }
 
@@ -51,7 +51,7 @@
 .Hangman button:disabled{
     background: grey;
     color: white;
-    box-shadow: 0 6px darkgray;
+    box-shadow: 0 4px darkgray;
 }
 
 #reset{

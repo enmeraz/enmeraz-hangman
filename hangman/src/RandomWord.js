@@ -14,7 +14,12 @@ let Random_Word = [
     "angle",
     "degree",
     "cool",
-    "hot"
+    "hot",
+    "pineapple",
+    "buffalo",
+    "zebra",
+    "mexico",
+    "computer"
 ];
 
 function randomWord() {

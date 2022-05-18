@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {randomWord} from "./RandomWord";
 import "./Hangman.css"
-import {image0} from "./hangmanImg/hangman0.png";
-import {image1} from "./hangmanImg/hangman1.png";
-import {image2} from "./hangmanImg/hangman2.png";
-import {image3} from "./hangmanImg/hangman3.png";
-import {image4} from "./hangmanImg/hangman4.png";
-import {image5} from "./hangmanImg/hangman5.png";
-import {image6} from "./hangmanImg/hangman6.png";
+import image0 from "./hangmanImg/hangman0.png";
+import image1 from "./hangmanImg/hangman1.png";
+import image2 from "./hangmanImg/hangman2.png";
+import image3 from "./hangmanImg/hangman3.png";
+import image4 from "./hangmanImg/hangman4.png";
+import image5 from "./hangmanImg/hangman5.png";
+import image6 from "./hangmanImg/hangman6.png";
 
 
 class Hangman extends Component {
@@ -74,7 +74,7 @@ class Hangman extends Component {
                 <p>
                     Guesses remaining: {this.props.maxWrong - this.state.numOfWrongGuess} / {" "} {this.props.maxWrong}
                 </p>
-                <p>Guess the mystery word :o</p>
+                <p>Guess the Mystery Word</p>
                 <p className='Hangman-word'>
                     {!gameOver ? this.guessedWord() : this.state.anwser} 
                 </p>

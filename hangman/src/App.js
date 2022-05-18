@@ -1,3 +1,4 @@
+import React from 'react';
 import Hangman from './Hangman';
 import './App.css';
 
