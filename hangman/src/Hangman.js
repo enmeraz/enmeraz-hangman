@@ -9,6 +9,7 @@ import {image4} from "./hangmanImg/hangman4.png";
 import {image5} from "./hangmanImg/hangman5.png";
 import {image6} from "./hangmanImg/hangman6.png";
 
+
 class Hangman extends Component {
     static defaultProps = {
         maxWrong: 6,
@@ -35,7 +36,7 @@ class Hangman extends Component {
     }
 
     guessedWord(){
-        return this.state.anwser.split("").map((letter) => (this.state.guessed.has(letter) ? letter: "_"))
+        return this.state.anwser.split("").map((letter) => (this.state.guessed.has(letter) ? letter: "_"));
     }
 
     handleGuess(event){

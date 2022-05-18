@@ -23,4 +23,4 @@ function randomWord() {
     ];
 }
 
-export{Random_Word};
+export{randomWord};
