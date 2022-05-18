@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import {randomWord} from "./RandomWord";
-import {image0} from "./hangmanImg/hangman0";
-import {image1} from "./hangmanImg/hangman1";
-import {image2} from "./hangmanImg/hangman2";
-import {image3} from "./hangmanImg/hangman3";
-import {image4} from "./hangmanImg/hangman4";
-import {image5} from "./hangmanImg/hangman5";
-import {image6} from "./hangmanImg/hangman6";
+import "./Hangman.css"
+import {image0} from "./hangmanImg/hangman0.png";
+import {image1} from "./hangmanImg/hangman1.png";
+import {image2} from "./hangmanImg/hangman2.png";
+import {image3} from "./hangmanImg/hangman3.png";
+import {image4} from "./hangmanImg/hangman4.png";
+import {image5} from "./hangmanImg/hangman5.png";
+import {image6} from "./hangmanImg/hangman6.png";
 
 class Hangman extends Component {
     static defaultProps = {
@@ -19,7 +20,7 @@ class Hangman extends Component {
         this.state = {
             numOfWrongGuess: 0, 
             guessed: new Set(),
-            anwser: randomWord()
+            anwser: randomWord(),
         };
         this.handleGuess = this.handleGuess.bind(this);
         this.reset = this.reset.bind(this); 
@@ -29,7 +30,7 @@ class Hangman extends Component {
         this.setState({
             numOfWrongGuess: 0, 
             guessed: new Set(),
-            anwser: randomWord()
+            anwser: randomWord(),
         });
     }
 
@@ -56,8 +57,9 @@ class Hangman extends Component {
 
     render() {
         const gameOver = this.state.numOfWrongGuess >= this.props.maxWrong;
-        const isWinner = this.state.guessedWord().join("") === this.state.anwser;
+        const isWinner = this.guessedWord().join("") === this.state.anwser;
         //declare winner
+        let gameState = this.generateKeyPad();
         if(isWinner) gameState = "Congratulations, You have won the Game";
         if(gameOver) gameState = "Game Over, try again";
         
@@ -67,13 +69,13 @@ class Hangman extends Component {
         return (
             <div className="Hangman">
                 <h2>Hangman</h2>
-                <img src={this.props.hangmanImg[this.state.numOfWrongGuess]} alt="hangman"/>
+                <img src={this.props.images[this.state.numOfWrongGuess]} alt="hangman"/>
                 <p>
                     Guesses remaining: {this.props.maxWrong - this.state.numOfWrongGuess} / {" "} {this.props.maxWrong}
                 </p>
                 <p>Guess the mystery word :o</p>
                 <p className='Hangman-word'>
-                    {!gameOver ? this.guessedWord : this.state.anwser} 
+                    {!gameOver ? this.guessedWord() : this.state.anwser} 
                 </p>
                 <p className='Hangman-buttons'> {gameState} </p>
                 {retart && (
@@ -81,7 +83,6 @@ class Hangman extends Component {
                 )}
             </div>
         );
-
     }
 }
 
