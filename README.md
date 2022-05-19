@@ -1,4 +1,4 @@
-# enmeraz-hangman
+# enmeraz.github.io
 
 ## Description:
 I created a simple react app that deployes the game Hangman. In this game we have to guess the mystery word (the empty green spaces shown blow). 
